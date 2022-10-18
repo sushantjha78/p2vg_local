@@ -1,6 +1,6 @@
 import numpy as np
-from skimage.measure import compare_psnr
-from skimage.measure import compare_ssim
+# from skimage.measure import compare_psnr
+# from skimage.measure import compare_ssim
 
 # ref: https://github.com/edenton/svg
 class Metric(object):

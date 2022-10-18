@@ -10,6 +10,7 @@ from tensorflow.python.platform import gfile
 
 from scipy.misc import imresize
 from scipy.misc import imsave
+# from imageio import imsave
 
 import argparse
 parser = argparse.ArgumentParser()
@@ -40,7 +41,7 @@ def get_seq(dname):
             k=k+1
             yield f, k, image_seq
 
-def convert_data(dname):    
+def convert_data(dname):
     seq_generator = get_seq(dname)
     n = 0
     while True:
